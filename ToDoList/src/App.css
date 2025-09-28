@@ -1,0 +1,35 @@
+body{
+  font-family: 'Courier New', Courier, monospace;
+  background-color:	#a4d8ff;
+  padding: 30px;
+  color: black;
+  /* background-image: url('./img/translucent-liquid-glass-filling-entire-screen-wallpaper-transparent-white-background-iridescent-abstract-many-colored-full-302912310.webp'); */
+  background-position: center;
+  background-size: cover;
+}
+
+.app {
+  max-width: 500px;
+  margin: 0 auto 300px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 10px 0;
+}
+
+input{ 
+  box-sizing: border-box;
+}
