@@ -147,8 +147,6 @@ ToDoList/
 
 1. **Funcionalidade de Edição de Tarefas**:
    - Implementar um modo de edição para modificar tarefas existentes
-   - Adicionar um botão de edição ao componente Todo
-   - Criar um formulário modal para edição rápida
 
 2. **Validações Aprimoradas**:
    - Implementar validação de entrada mais robusta
@@ -158,22 +156,17 @@ ToDoList/
 3. **Experiência de Usuário**:
    - Adicionar animações de transição para ações de CRUD
    - Implementar tema claro/escuro com alternância
-   - Melhorar a acessibilidade (ARIA labels, navegação por teclado)
 
 ### Expansões Técnicas
 
 1. **Deploy em Produção**:
    - Configurar CI/CD com GitHub Actions
-   - Realizar deploy na Vercel ou Netlify
-   - Otimizar bundle para produção
+   - Realizar deploy
 
 2. **Expansão para Fullstack**:
-   - Criar backend com Node.js e Express
-   - Migrar de localStorage para um banco de dados (MongoDB)
-   - Implementar autenticação de usuários
+   - Criar backend com Node.js
+   - Migrar de localStorage para um banco de dados
 
 3. **Recursos Adicionais**:
    - Sistema de prioridades para tarefas
    - Notificações para tarefas com prazos
-   - Estatísticas de produtividade
-   - Compartilhamento de tarefas entre usuários
