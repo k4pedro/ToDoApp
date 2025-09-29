@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import Todo from './components/Todo'
 import TodoForm from './components/TodoForm'
@@ -6,34 +6,20 @@ import Search from './components/Search'
 import Filter from './components/Filter'
 
 function App() {
-  const [todos, setTodos] = useState(
-    [
-      {
-        id: 1,
-        text: "uma funcionalidade",
-        category: "trabalho",
-        isCompleted: false
-      },
-      {
-        id: 2,
-        text: "duas funcionalidades",
-        category: "escola",
-        isCompleted: false
-      },
-      {
-        id: 3,
-        text: "três funcionalidades",
-        category: "faculdade",
-        isCompleted: false
-      },
-    ]
-  )
+  const [todos, setTodos] = useState(() => {
+    const savedTodos = localStorage.getItem("todos");
+    return savedTodos ? JSON.parse(savedTodos) : [];
+  });
+  
+  // Salva os dados no localStorage sempre que o estado 'todos' mudar
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }, [todos]);
 
   const [search, setSearch] = useState('');
 
   const [filter, setFilter] = useState('All');
   const [sort, setSort] = useState('Asc');
-
 
   const addTodo = (text, category) => {
     const newTodos = [...todos, {
