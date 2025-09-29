@@ -140,3 +140,40 @@ ToDoList/
 - **Sem Sincronização**: Não há sincronização entre dispositivos diferentes
 - **Capacidade Limitada**: O localStorage tem limite de armazenamento (aproximadamente 5MB)
 - **Sem Backup**: Se o usuário limpar os dados do navegador, todas as tarefas serão perdidas
+
+## 🔮 Próximos Passos
+
+### Melhorias Planejadas
+
+1. **Funcionalidade de Edição de Tarefas**:
+   - Implementar um modo de edição para modificar tarefas existentes
+   - Adicionar um botão de edição ao componente Todo
+   - Criar um formulário modal para edição rápida
+
+2. **Validações Aprimoradas**:
+   - Implementar validação de entrada mais robusta
+   - Adicionar mensagens de erro amigáveis
+   - Prevenir duplicação de tarefas com o mesmo nome
+
+3. **Experiência de Usuário**:
+   - Adicionar animações de transição para ações de CRUD
+   - Implementar tema claro/escuro com alternância
+   - Melhorar a acessibilidade (ARIA labels, navegação por teclado)
+
+### Expansões Técnicas
+
+1. **Deploy em Produção**:
+   - Configurar CI/CD com GitHub Actions
+   - Realizar deploy na Vercel ou Netlify
+   - Otimizar bundle para produção
+
+2. **Expansão para Fullstack**:
+   - Criar backend com Node.js e Express
+   - Migrar de localStorage para um banco de dados (MongoDB)
+   - Implementar autenticação de usuários
+
+3. **Recursos Adicionais**:
+   - Sistema de prioridades para tarefas
+   - Notificações para tarefas com prazos
+   - Estatísticas de produtividade
+   - Compartilhamento de tarefas entre usuários
